@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url("../fonts/comicneue_bold-webfont.woff2") format("woff2"), url("../fonts/comicneue_bold-webfont.woff") format("woff"), url("../fonts/comicneue_bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+#site {
+  background: #fff302;
+  margin-top: 7.75rem;
+  margin-bottom: 3rem;
+  padding: 2rem; }
+
+.focussed #burning_bush {
+  transform: scale(2); }
+.focussed #title,
+.focussed #about_text,
+.focussed #recent {
+  opacity: 0; }
+
+#form_container {
+  width: calc(100% - 4rem);
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 10;
+  box-shadow: 0.25rem 0.25rem 0px #db39ad; }
+
+input[type='text'],
+input[type='submit'] {
+  display: inline-block;
+  margin: 0;
+  -webkit-appearance: none;
+  outline: none;
+  border: 4px solid #db39ad;
+  background-color: #fff302;
+  color: #db39ad;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  height: 5rem;
+  font-size: 2.5rem;
+  font-family: 'Comic Neue', 'Comic Sans', sans-serif; }
+
+input[type='text'] {
+  width: calc(100% - 15rem);
+  padding-left: 2rem; }
+
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #db39ad; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #db39ad; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #db39ad; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #db39ad; }
+
+input[type='submit'] {
+  width: 15rem;
+  border-left: 0;
+  padding: 0; }
+  input[type='submit']:hover {
+    background-color: #db39ad;
+    color: #fff302;
+    cursor: pointer; }
+
+#burning_bush {
+  position: fixed;
+  bottom: 0;
+  left: 2rem;
+  width: 20rem;
+  transform: scale(1);
+  z-index: -10;
+  transform-origin: bottom left;
+  transition: transform ease 1s; }
+
+#main_content {
+  margin-top: 2rem; }
+
+#title {
+  display: block;
+  position: fixed;
+  top: 10rem;
+  left: 2rem;
+  width: 23rem;
+  opacity: 1;
+  transition: opacity ease 0.25s 0.5s; }
+
+.content_section {
+  vertical-align: top;
+  display: inline-block; }
+
+#about_text {
+  width: 33.33%;
+  margin-left: 33.33%;
+  color: #db39ad;
+  -webkit-perspective: 100px;
+  /* Safari 4-8  */
+  perspective: 100px;
+  opacity: 1;
+  transition: opacity ease 0.25s 0.25s; }
+  #about_text p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    line-height: 1.2em;
+    transform: rotateY(2deg);
+    text-indent: 2rem; }
+
+#recent {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  width: 33.33%;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  color: #db39ad;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity ease 0.25s 0.75s; }
+
+.recent_section {
+  margin-bottom: 1em;
+  line-height: 1.2em; }
+  .recent_section a:link,
+  .recent_section a:visited {
+    font-family: 'Comic Neue', 'Comic Sans', sans-serif;
+    text-transform: uppercase;
+    color: #db39ad;
+    text-decoration: none; }
+  .recent_section a,
+  .recent_section p {
+    display: block;
+    text-indent: 2rem; }
+
+#paypal {
+  width: 30%;
+  display: block;
+  margin: 3rem auto; }
+
+/*# sourceMappingURL=main.css.map */
