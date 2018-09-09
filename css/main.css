@@ -50,6 +50,9 @@ table {
   src: url("../fonts/comicneue_bold-webfont.woff2") format("woff2"), url("../fonts/comicneue_bold-webfont.woff") format("woff"), url("../fonts/comicneue_bold-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+html, body {
+  font-size: 20px; }
+
 #site {
   background: #fff302;
   margin-top: 7.75rem;
@@ -129,14 +132,14 @@ input[type='submit'] {
   transition: transform ease 1s; }
 
 #main_content {
-  margin-top: 2rem; }
+  /*margin-top: 2rem;*/ }
 
 #title {
   display: block;
   position: fixed;
   top: 10rem;
-  left: 2rem;
-  width: 23rem;
+  left: 2.2rem;
+  width: 25%;
   opacity: 1;
   transition: opacity ease 0.25s 0.5s; }
 
@@ -145,20 +148,19 @@ input[type='submit'] {
   display: inline-block; }
 
 #about_text {
-  width: 33.33%;
-  margin-left: 33.33%;
+  width: 35%;
+  margin-left: 30%;
   color: #db39ad;
-  -webkit-perspective: 100px;
-  /* Safari 4-8  */
-  perspective: 100px;
+  /*-webkit-perspective: 100px; /* Safari 4-8  */
+  /*perspective: 100px;*/
   opacity: 1;
   transition: opacity ease 0.25s 0.25s; }
   #about_text p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: bolder;
     margin-bottom: 1em;
     line-height: 1.2em;
-    transform: rotateY(2deg);
+    /*transform: rotateY(2deg);*/
     text-indent: 2rem; }
 
 #recent {
@@ -188,9 +190,118 @@ input[type='submit'] {
     display: block;
     text-indent: 2rem; }
 
+p em {
+  font-style: italic; }
+
 #paypal {
   width: 30%;
   display: block;
-  margin: 3rem auto; }
+  margin: 2rem auto; }
+
+@media (max-width: 1600px) {
+  html, body {
+    font-size: 18px; } }
+@media (max-width: 1480px) {
+  html, body {
+    font-size: 16px; } }
+@media (max-width: 1200px) {
+  html, body {
+    font-size: 14px; }
+
+  #paypal {
+    width: 8rem; } }
+@media (max-width: 1000px) {
+  #site #title {
+    display: block;
+    position: static;
+    width: 22rem; }
+  #site #about_text {
+    margin-top: 2rem;
+    width: 60%;
+    margin-left: 0rem; }
+  #site #recent {
+    top: 10rem;
+    transform: translateY(0); }
+  #site #burning_bush {
+    right: 2rem;
+    left: auto;
+    transform-origin: bottom right;
+    width: 17rem; } }
+@media (max-width: 740px) {
+  #site {
+    margin-top: 6rem; }
+    #site #title {
+      display: block;
+      position: static;
+      width: 22rem; }
+    #site #about_text {
+      margin-top: 2rem;
+      width: 100%;
+      margin-left: 0rem; }
+    #site #recent {
+      position: static;
+      padding-left: 0;
+      font-size: 1.25rem;
+      width: 50%; }
+    #site input[type='text'],
+    #site input[type='submit'] {
+      height: 4rem;
+      font-size: 2rem;
+      border-width: 3px; }
+    #site input[type='text'] {
+      padding-left: 1.65rem; }
+    #site input[type='submit'] {
+      border-left: none; } }
+@media (max-width: 620px) {
+  #site {
+    margin-top: 5rem; }
+    #site input[type='text'],
+    #site input[type='submit'] {
+      height: 3rem;
+      font-size: 1.5rem;
+      border-width: 2px; }
+    #site input[type='text'] {
+      width: calc(100% - 8rem); }
+    #site input[type='submit'] {
+      width: 8rem; }
+    #site #burning_bush {
+      width: calc(50% - 2rem); } }
+@media (max-width: 520px) {
+  #site {
+    margin-top: 4rem; }
+    #site input[type='text'],
+    #site input[type='submit'] {
+      height: 2.5rem;
+      font-size: 1.25rem; }
+    #site #title {
+      width: 18rem; }
+    #site #recent {
+      width: 100%;
+      margin-bottom: 14rem; }
+    #site input[type='text'] {
+      padding-left: 1.5rem;
+      width: calc(100% - 6rem); }
+    #site input[type='submit'] {
+      width: 6rem; } }
+@media (max-width: 400px) {
+  html, body {
+    font-size: 12px; }
+
+  #site {
+    margin-top: 4rem; }
+    #site input[type='text'],
+    #site input[type='submit'] {
+      height: 2.5rem;
+      font-size: 1.25rem; }
+    #site #title {
+      width: 18rem; }
+    #site #recent {
+      width: 100%;
+      margin-bottom: 14rem; }
+    #site input[type='text'] {
+      padding-left: 1.5rem;
+      width: calc(100% - 6rem); }
+    #site input[type='submit'] {
+      width: 6rem; } }
 
 /*# sourceMappingURL=main.css.map */
