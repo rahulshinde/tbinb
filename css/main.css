@@ -246,33 +246,33 @@ p em {
       padding-left: 0;
       font-size: 1.25rem;
       width: 50%; }
-    #site input[type='text'],
+    #site input[type='email'],
     #site input[type='submit'] {
       height: 4rem;
       font-size: 2rem;
       border-width: 3px; }
-    #site input[type='text'] {
+    #site input[type='email'] {
       padding-left: 1.65rem; }
     #site input[type='submit'] {
       border-left: none; } }
 @media (max-width: 620px) {
   #site {
     margin-top: 5rem; }
-    #site input[type='text'],
+    #site input[type='email'],
     #site input[type='submit'] {
       height: 3rem;
       font-size: 1.5rem;
       border-width: 2px; }
-    #site input[type='text'] {
-      width: calc(100% - 8rem); }
+    #site input[type='email'] {
+      width: calc(100% - 10rem); }
     #site input[type='submit'] {
-      width: 8rem; }
+      width: 10rem; }
     #site #burning_bush {
       width: calc(50% - 2rem); } }
 @media (max-width: 520px) {
   #site {
     margin-top: 4rem; }
-    #site input[type='text'],
+    #site input[type='email'],
     #site input[type='submit'] {
       height: 2.5rem;
       font-size: 1.25rem; }
@@ -281,18 +281,18 @@ p em {
     #site #recent {
       width: 100%;
       margin-bottom: 14rem; }
-    #site input[type='text'] {
+    #site input[type='email'] {
       padding-left: 1.5rem;
-      width: calc(100% - 6rem); }
+      width: calc(100% - 8rem); }
     #site input[type='submit'] {
-      width: 6rem; } }
+      width: 8rem; } }
 @media (max-width: 400px) {
   html, body {
     font-size: 12px; }
 
   #site {
     margin-top: 4rem; }
-    #site input[type='text'],
+    #site input[type='email'],
     #site input[type='submit'] {
       height: 2.5rem;
       font-size: 1.25rem; }
@@ -301,7 +301,7 @@ p em {
     #site #recent {
       width: 100%;
       margin-bottom: 14rem; }
-    #site input[type='text'] {
+    #site input[type='email'] {
       padding-left: 1.5rem;
       width: calc(100% - 6rem); }
     #site input[type='submit'] {
