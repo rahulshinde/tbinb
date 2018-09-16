@@ -4,6 +4,7 @@ $(document).ready(function(){
   Site.focus = false;
   Site.body = $('body');
   $(document).on('click', Site.checkIfFocus);
+  // $("#mc-embedded-subscribe").on('click', Site.validateForm);
 });
 
 Site.checkIfFocus = function(){
@@ -15,3 +16,10 @@ Site.checkIfFocus = function(){
     Site.focus = false;
   }
 }
+
+// Site.validateForm = function(){
+//   event.preventDefault();
+
+//   submission = $('#signup').val();
+//   console.log('submisssion');
+// }
