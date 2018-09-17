@@ -87,7 +87,9 @@ input[type='submit'] {
   box-sizing: border-box;
   height: 5rem;
   font-size: 2.5rem;
-  font-family: 'Comic Neue', 'Comic Sans', sans-serif; }
+  font-family: 'Comic Neue', 'Comic Sans', sans-serif;
+  border-radius: 0;
+  -webkit-border-radius: 0; }
 
 input[type='email'] {
   width: calc(100% - 15rem);
